@@ -13,25 +13,37 @@ var dieselValues = ['none',8.4,10.3,5.7,9.1,6.3,9.8,3.2,5.9];
 $(document).ready(function(){
   console.log(models,petrolValues,dieselValues);
 
-  //if($('input[id="petrol"]:checked')){
-    //console.log("bless");
-    //$('#cars option[value="Toyota3"]').attr("disabled","disabled");
-  //}
+  if($('input[id="petrol"]:checked')){
+    console.log("bless");
+    $('#cars option[value="Toyota3"]').prop("disabled",true);
+  }else {
+    console.log("no");
+  }
+  if($('input[id="petrol"]:checked')=== false && $('input[id="diesel"]:checked' === false)){
+    alert("Choose fuel type");
+    return
+  }
 
   $('#fuelForm').submit(function(event){
     event.preventDefault();
     var selectModel = $('#cars').val();
     console.log(selectModel);
-    if(selectModel === 'Choose...'){
+    let petrolCheck= document.querySelector("#petrol").checked;
+    console.log("petrolcheck", petrolCheck);
+    let dieselCheck= document.querySelector("#diesel").checked;
+    console.log("dieselcheck", dieselCheck);
+    if(petrolCheck === false && dieselCheck === false){
+      alert("Please choose fuel type!")
+      return false;
+    }else if(selectModel === 'Choose...'){
       alert("Please choose a model!");
+      return false;
     }
+    
     var inputDistance = parseInt($('#distance').val());
     console.log(inputDistance);
 
-    var petrolCheck = $('input[id="petrol"]:checked').val();
-    console.log(petrolCheck);
-    var dieselCheck = $('input[id="diesel"]:checked').val();
-    console.log(dieselCheck);
+
     var modelIndex = models.indexOf(selectModel);
     console.log(modelIndex);
     var petrolConsumption = parseFloat(petrolValues[modelIndex]);
