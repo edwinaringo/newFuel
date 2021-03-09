@@ -1,7 +1,7 @@
-function Car(name, fuelType, distance, fuelAmount, price){
+function Car(name, distance,fuelType, fuelAmount, price){
   this.name = name;
-  this.fuelType = fuelType;
   this.distance = distance;
+  this.fuelType = fuelType;
   this.fuelAmount = fuelAmount;
   this.price = price;
 }
@@ -27,8 +27,10 @@ $(document).ready(function(){
 
   $('#fuelForm').submit(function(event){
     event.preventDefault();
-    var selectModel = $('#cars').val();
+    var selectModel = $('#cars option:selected').val();
     console.log(selectModel);
+    var modelName = $('#cars option:selected').text();
+    console.log(modelName);
     let petrolCheck= document.querySelector("#petrol").checked;
     console.log("petrolcheck", petrolCheck);
     let dieselCheck= document.querySelector("#diesel").checked;
@@ -51,6 +53,8 @@ $(document).ready(function(){
 
     if(petrolCheck){
       console.log("bless");
+      var typePetrol = document.querySelector("#petrol").value;
+      console.log(typePetrol);  
       var petrolConsumption = parseFloat(petrolValues[modelIndex]);
       console.log(petrolConsumption);  
       var petrolNeeded = ((petrolConsumption*inputDistance)/100)
@@ -59,6 +63,8 @@ $(document).ready(function(){
       console.log(petrolPrice);
     }else if(dieselCheck){
       console.log("Bariki");
+      var typeDiesel = document.querySelector("#diesel").value;
+      console.log(typeDiesel);  
       var dieselConsumption = parseFloat(dieselValues[modelIndex]);
       console.log(dieselConsumption);  
       var dieselNeeded = ((dieselConsumption*inputDistance)/100)
@@ -66,5 +72,7 @@ $(document).ready(function(){
       var dieselPrice =parseInt(dieselNeeded*104);
       console.log(dieselPrice);
     }
+    var newCar = new Car(modelName,inputDistance,typeDiesel||typePetrol,dieselNeeded||petrolNeeded,dieselCheck||petrolPrice,);
+    console.log(newCar);
   });
 });
