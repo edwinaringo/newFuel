@@ -1,0 +1,26 @@
+
+body{
+    background-image: url(fue2.jpeg);
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+.jumbotron{
+text-align: left;
+background-color: bisque;
+text-shadow: blue;
+}
+
+.heading{
+    text-align: center;
+    background-image: image("fue1.jpeg");
+    font-size: 60px;
+    text-decoration: cornsilk;
+}
