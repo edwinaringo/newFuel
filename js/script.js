@@ -23,5 +23,15 @@ $(document).ready(function(){
     var inputDistance = parseInt($('#distance').val());
     console.log(inputDistance);
 
+    var petrolCheck = $('input[id="petrol"]:checked').val();
+    console.log(petrolCheck);
+    var dieselCheck = $('input[id="diesel"]:checked').val();
+    console.log(dieselCheck);
+
+    //if(petrolCheck){
+      //console.log("bless");
+    //}else if (dieselCheck){
+      //console.log("you");
+    //}
   });
 });
