@@ -36,6 +36,8 @@ $(document).ready(function(){
     console.log(modelIndex);
     var petrolConsumption = parseFloat(petrolValues[modelIndex]);
     console.log(petrolConsumption);  
+    var dieselConsumption = parseFloat(dieselValues[modelIndex]);
+    console.log(dieselConsumption);  
 
 
     //if(petrolCheck){
