@@ -46,18 +46,17 @@ $(document).ready(function(){
 
     var modelIndex = models.indexOf(selectModel);
     console.log(modelIndex);
-    var petrolConsumption = parseFloat(petrolValues[modelIndex]);
-    console.log(petrolConsumption);  
     var dieselConsumption = parseFloat(dieselValues[modelIndex]);
     console.log(dieselConsumption);  
 
 
-    //if(petrolCheck){
-      //console.log("bless");
-      //$('#cars option[value="Toyota3"]').attr("disabled","disabled");
-      //var fuelNeeded = ((petrolConsumption*inputDistance)/100)
-      //console.log(fuelNeeded);
-    //}
+    if(petrolCheck){
+      console.log("bless");
+      var petrolConsumption = parseFloat(petrolValues[modelIndex]);
+      console.log(petrolConsumption);  
+      var fuelNeeded = ((petrolConsumption*inputDistance)/100)
+      console.log(fuelNeeded);
+    }
 
 
     //else if (dieselCheck){
