@@ -46,17 +46,22 @@ $(document).ready(function(){
 
     var modelIndex = models.indexOf(selectModel);
     console.log(modelIndex);
-    var dieselConsumption = parseFloat(dieselValues[modelIndex]);
-    console.log(dieselConsumption);  
 
 
     if(petrolCheck){
       console.log("bless");
       var petrolConsumption = parseFloat(petrolValues[modelIndex]);
       console.log(petrolConsumption);  
-      var fuelNeeded = ((petrolConsumption*inputDistance)/100)
-      console.log(fuelNeeded);
+      var petrolNeeded = ((petrolConsumption*inputDistance)/100)
+      console.log(petrolNeeded);
+    }else if(dieselCheck){
+      console.log("Bariki");
+      var dieselConsumption = parseFloat(dieselValues[modelIndex]);
+      console.log(dieselConsumption);  
+      var dieselNeeded = ((dieselConsumption*inputDistance)/100)
+      console.log(dieselNeeded);
     }
+
 
 
     //else if (dieselCheck){
