@@ -6,7 +6,7 @@ function Car(name, fuelType, distance, fuelAmount, price){
   this.price = price;
 }
 
-var models = ['Toyota1','Toyota2','Toyota3','Toyota3','Mercedes1','Mercedes','Audi1','Audi2','BMW1','BMW2','Subaru1','Subaru2','Nissan1','Nissan2'];
+var models = ['Toyota1','Toyota2','Toyota3','Toyota3','Mercedes1','Mercedes2','Audi1','Audi2','BMW1','BMW2','Subaru1','Subaru2','Nissan1','Nissan2'];
 var petrolValues = [4.5,7.3,'none',5.7,12.2,7.5,8.5,6.5,8.7];
 var dieselValues = ['none',8.4,10.3,5.7,9.1,6.3,9.8,3.2,5.9];
 
@@ -55,12 +55,16 @@ $(document).ready(function(){
       console.log(petrolConsumption);  
       var petrolNeeded = ((petrolConsumption*inputDistance)/100)
       console.log(petrolNeeded);
+      var petrolPrice =parseInt(petrolNeeded*117);
+      console.log(petrolPrice);
     }else if(dieselCheck){
       console.log("Bariki");
       var dieselConsumption = parseFloat(dieselValues[modelIndex]);
       console.log(dieselConsumption);  
       var dieselNeeded = ((dieselConsumption*inputDistance)/100)
       console.log(dieselNeeded);
+      var dieselPrice =parseInt(dieselNeeded*104);
+      console.log(dieselPrice);
     }
   });
 });
