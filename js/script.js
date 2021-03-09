@@ -5,3 +5,4 @@ function Car(name, fuelType, distance, fuelAmount, price){
   this.fuelAmount = fuelAmount;
   this.price = price;
 }
+
