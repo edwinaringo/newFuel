@@ -16,11 +16,12 @@
       <legend><span class="number"></span> Calculate My Fuel Cost</legend>
     
       <p>Please Select Your Fuel Type:</p>
+      <div>
       <input type="radio" id="petrol" name="fuel-type" value="petrol">
-      <label for="male">Petrol</label>
+      <label for="petrol" class="radio-inline">Petrol</label>
       <input type="radio" id="diesel" name="fuel-type" value="diesel">
-      <label for="female">Diesel</label>
-
+      <label for="diesel" class="radio-inline">Diesel</label>
+    </div>
 
       <label for="job">Car Model </label>
       <select id="job" name="field4">
@@ -29,34 +30,34 @@
           <option selected>Choose...</option>
       <optgroup label="Toyota">
         
-        <option value="4.5l/100km">( Toyota 1000 cc - 2000 cc)</option>
-        <option value="7.3l/100km">( Toyota 2000 cc - 4000 cc)</option>
-        <option value="10.3l/100km">( Toyota 4000 cc - 5000 cc)</option>
+        <option value="Toyota1">( Toyota 1000 cc - 2000 cc)</option>
+        <option value="Toyota2">( Toyota 2000 cc - 4000 cc)</option>
+        <option value="Toyota3">( Toyota 4000 cc - 5000 cc)</option>
       </optgroup>
       <optgroup label="Mercedes">
-        <option value="5.7l/100km">( Mercedes 2000 cc - 3000 cc)</option>
-        <option value="12.2l/100km">( Mercedes 3000 cc - 5000 cc)</option>
+        <option value="Mercedes1">( Mercedes 2000 cc - 3000 cc)</option>
+        <option value="Mercedes2">( Mercedes 3000 cc - 5000 cc)</option>
       </optgroup> 
       <optgroup label="Audi">
-        <option value="5.7l/100km">( Audi 2000 cc - 3000 cc)</option>
-        <option value="12.2l/100km">( Audi 3000 cc - 5000 cc)</option>
+        <option value="Audi1">( Audi 2000 cc - 3000 cc)</option>
+        <option value="Audi2">( Audi 3000 cc - 5000 cc)</option>
       </optgroup>
       <optgroup label="BMW">
-        <option value="5.7l/100km">(BMW 2000 cc - 3000 cc)</option>
-        <option value="12.2l/100km">(BMW 3000 cc - 5000 cc)</option>
+        <option value="BMW1">(BMW 2000 cc - 3000 cc)</option>
+        <option value="BMW2">(BMW 3000 cc - 5000 cc)</option>
       </optgroup>
       <optgroup label="Subaru">
-          <option value="7.5l/100km">(Subaru 2000 cc - 3000 cc)</option>
-          <option value="8.5l/100km">(Subaru 3000 cc - 4000 cc)</option>
+          <option value="Subaru1">(Subaru 2000 cc - 3000 cc)</option>
+          <option value="Subaru2">(Subaru 3000 cc - 4000 cc)</option>
       </optgroup>
       <optgroup label="Nissan">
-          <option value="6.5l/100km">(Nissan 2000 cc - 3000 cc)</option>
-          <option value="8.7l/100km">(Nissan 3000 cc - 5000 cc)</option>
+          <option value="Nissan1">(Nissan 2000 cc - 3000 cc)</option>
+          <option value="Nissan2">(Nissan 3000 cc - 5000 cc)</option>
         </optgroup>
       </optgroup>
       </select>     
     
-      <label for="job">Distance</label>   
+      <label for="distance">Distance</label>   
       <input type="text" name="field1" placeholder="km ">
       </fieldset>
       <input type="submit" value="Apply" />
