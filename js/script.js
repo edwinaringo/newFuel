@@ -17,5 +17,9 @@ $(document).ready(function(){
     event.preventDefault();
     var selectModel = $('#cars').val();
     console.log(selectModel);
+    if(selectModel === "Choose..."){
+      alert("Please choose a model!");
+    }
+
   });
 });
