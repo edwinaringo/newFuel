@@ -13,9 +13,9 @@ var dieselConsumption = ['none',8.4,10.3,5.7,9.1,6.3,9.8,3.2,5.9];
 $(document).ready(function(){
   console.log(models,petrolConsumption,dieselConsumption);
 
-  $("#fuelForm").submit(function(event){
+  $('#fuelForm').submit(function(event){
     event.preventDefault();
-    var selectModel = $("#cars").val();
+    var selectModel = $('#cars').val();
     console.log(selectModel);
   });
 });
