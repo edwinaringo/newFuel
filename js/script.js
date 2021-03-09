@@ -13,10 +13,10 @@ var dieselValues = ['none',8.4,10.3,5.7,9.1,6.3,9.8,3.2,5.9];
 $(document).ready(function(){
   console.log(models,petrolValues,dieselValues);
 
-  if($('input[id="petrol"]:checked')){
-    console.log("bless");
-    $('#cars option[value="Toyota3"]').attr("disabled","disabled");
-  }
+  //if($('input[id="petrol"]:checked')){
+    //console.log("bless");
+    //$('#cars option[value="Toyota3"]').attr("disabled","disabled");
+  //}
 
   $('#fuelForm').submit(function(event){
     event.preventDefault();
@@ -38,12 +38,12 @@ $(document).ready(function(){
     console.log(petrolConsumption);  
 
 
-    if(petrolCheck){
-      console.log("bless");
-      $('#cars option[value="Toyota3"]').attr("disabled","disabled");
-      var fuelNeeded = ((petrolConsumption*inputDistance)/100)
-      console.log(fuelNeeded);
-    }
+    //if(petrolCheck){
+      //console.log("bless");
+      //$('#cars option[value="Toyota3"]').attr("disabled","disabled");
+      //var fuelNeeded = ((petrolConsumption*inputDistance)/100)
+      //console.log(fuelNeeded);
+    //}
 
 
     //else if (dieselCheck){
