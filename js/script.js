@@ -59,11 +59,11 @@ $(document).ready(function(){
       console.log("bless");
       var typePetrol = document.querySelector("#petrol").value;
       console.log(typePetrol);  
-      var petrolConsumption = parseFloat(petrolValues[modelIndex]);
+      var petrolConsumption = parseFloat(petrolValues[modelIndex]).toFixed(3);
       console.log(petrolConsumption);  
       var petrolNeeded = ((petrolConsumption*inputDistance)/100)
       console.log(petrolNeeded);
-      var petrolPrice =parseInt(petrolNeeded*117).toFixed(3);
+      var petrolPrice =parseInt(petrolNeeded*117);
       console.log(petrolPrice);
     }else if(dieselCheck){
       console.log("Bariki");
@@ -79,5 +79,11 @@ $(document).ready(function(){
     var newCar = new Car(modelName,inputDistance,typeDiesel||typePetrol,dieselNeeded||petrolNeeded,dieselCheck||petrolPrice,);
     console.log(newCar);
     document.getElementById('fuelForm').reset();
+    $('#resultSection').show();
+    $('ul#result').append('<li>' + "Car Model : " + newCar.name + '</li>' +
+    '<li>' + "Distance : " + newCar.distance + ' Km' + '</li>' +
+    '<li>' + "Fuel Type : " + newCar.fuelType + '</li>'+
+    '<li>' + "Amount of Fuel Needed :" + newCar.fuelAmount + 'Litres'+'</li>' +
+    '<li>' + "Estimated Price : Ksh." + newCar.price + '</li>')
   });
 });
