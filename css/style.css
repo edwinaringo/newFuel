@@ -1,11 +1,7 @@
 
 body{
-    background-image: url(fue2.jpeg);
-    background-size: cover;
-
+    background-color: burlywood;
 }
-
-
 
 
 
@@ -14,8 +10,11 @@ body{
 
 .jumbotron{
 text-align: left;
-background-color: bisque;
 text-shadow: blue;
+font-size: larger;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .heading{
@@ -23,4 +22,19 @@ text-shadow: blue;
     background-image: image("fue1.jpeg");
     font-size: 60px;
     text-decoration: cornsilk;
+}
+ 
+.text{
+    font-size: 20px;
+    padding-left: 15px;
+}
+img{
+    max-width: 100%;
+}
+.thumbnail{
+    flex-basis: 30%;
+}
+.header-right{
+    font-size: 15px;
+    text-decoration-color: paleturquoise;
 }
