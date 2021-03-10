@@ -49,7 +49,6 @@
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	margin-bottom: 30px;
 }
-
 .form-style-5 select{
 	-webkit-appearance: menulist-button;
 	height:35px;
@@ -97,30 +96,20 @@
   background-size: cover;
   position: relative;
   }
-
 body {
   height: 100%;
   background-image: url("https://gomechanic.in/blog/wp-content/uploads/2018/09/Fuel-Efficiency-Driving-Tips-Featured-Image.png");
   background-repeat: no-repeat;
   background-position: center;
-   
   background-size: cover;
 }
-.jumbotron {
-  position:relative;
-  padding-top:25px;
-  padding-bottom:10px;
-  opacity: 100%;
-  columns: 2;
+.bg-light{
+	text-align: center;
+	opacity: 90%;
 }
-.jumbotron .container {
-  position:relative;
-  z-index:2;
+img{
+	height: 70px;
+  width: 70px;	
 }
 
-@media screen and (max-width: 768px) {
-  .jumbotron {
-    padding-top:20px;
-    padding-bottom:20px;
-  }
-}
+	
