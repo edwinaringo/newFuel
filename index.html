@@ -62,61 +62,34 @@
       </form>
     </div>
 
-    <section class="contact">
-      <div class="content">
-        <h2>Contact Us</h2>
-        <p>At myFuel, your feedback is highly appreciated.If you wish to send us a message or a complaint, 
-          please fill the form below to do so.</p>
-      </div>
+<!--contact us section-->
 
-      <div class="container">        
-          <div class="contactInfo">
-            <div class="box">
-                <div class="icon"> <i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                <div class="text"></div> 
-                    <h3>Address</h3>
-                    <p>Times Tower Building <br> Haile Selassie Avenue <br> 20th Floor - 3452 </p>
-            </div>
+    <section id="contact-section">
+      <div class="container">
+         <h2>Contact Us</h2>
+         <p>At myFuel we value your feedback. Please leave us a message or complaint by filling the form below.</p>
+        <div class="contact-form">
+
+             <!-- First grid -->
+          <div>
+            <i class="fa fa-map-marker"></i><span class="form-info">  Times Tower 20th Floor-344</span><br>
+            <i class="fa fa-phone" > </i><span class="form-info">  02-334-4563</span><br>
+            <i class="fa fa-envelope"></i><span class="form-info">  myFuelApp@co.ke</span>
           </div>
-
-        <div class="box">
-            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i> </div>
-            <div class="text"></div> 
-                <h3>Phone</h3>
-                <p>02-3443-223</p>
-            </div>
-        </div>
-  
-        <div class="box">
-            <div class="icon"> <i class="fa fa-envelope" aria-hidden="true"></i></div>
-            <div class="text"></div> 
-                <h3>Email</h3>
-                <p> myFuelApp@gmail.co.ke</p>
-            </div>
-        </div>
-      
-        <div class="contactForm">
-          <form action="">
-            <h2>Send us a message</h2>
-            <div class="inputBox">
-              <input type="text" name="" required="required">
-              <span>Full name</span>
-            </div>
-            <div class="inputBox">
-              <input type="text" name="" required="required">
-              <span>Email</span>
-            </div>
-            <div class="inputBox">
-              <textarea name="" id="" cols="30" rows="5" required="required"></textarea>
-              <span>Type your Message...</span>
-            </div>
-            <div class="inputBox">
-              <input type="submit" name="" value="Send">
-            </div>
-          </form>
+          
+              <!-- second grid -->
+      <div>        
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="text" placeholder="Last Name"><br>
+          <input type="Email" placeholder="Email" required><br>
+          <input type="text" placeholder="Subject of this message"><br>
+          <textarea name="message" placeholder="Message" rows="5" required></textarea><br>
+          <button class="submit" >Send Message</button> 
+        </form>   
+          </div>
         </div>
       </div>
-    
     </section>
   </body>
 </html>
