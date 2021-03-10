@@ -111,7 +111,7 @@
 
 
 #contact-section{
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url();
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(images/contact.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
