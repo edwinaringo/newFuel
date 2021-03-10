@@ -1,11 +1,95 @@
-<<!doctype html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <title>Fuel App</title>
-    <body>
-<h1>Welcome</h1>
-    </body>
-    </html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <title>My Fuel, :Nairobi</title>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1 > My Fuel: Nairobi</h1>
+      <h3 > Calculate your fuel consumption and cost</h3>
+    </div>
+    <div class="form-style-5">
+      <form id="fuelForm">
+        <fieldset>
+          <legend><span class="number"></span> Calculate My Fuel Cost</legend>
+          <p>Please Select Your Fuel Type:</p>
+          <div>
+            <input type="radio" id="petrol" name="fuel-type" value="petrol" checked>
+            <label for="petrol" class="radio-inline">Petrol</label>
+            <input type="radio" id="diesel" name="fuel-type" value="diesel">
+            <label for="diesel" class="radio-inline">Diesel</label>
+          </div>
+          <label for="cars">Car Model </label>
+          <select id="cars" name="field4">
+            <optgroup>
+              <option selected>Choose...</option>
+            </optgroup>
+            <optgroup label="Toyota">
+              <option value="Toyota1">( Toyota 1000 cc - 2000 cc)</option>
+              <option value="Toyota2">( Toyota 2000 cc - 4000 cc)</option>
+              <option value="Toyota3">( Toyota 4000 cc - 5000 cc)</option>
+            </optgroup>
+            <optgroup label="Mercedes">
+              <option value="Mercedes1">( Mercedes 2000 cc - 3000 cc)</option>
+              <option value="Mercedes2">( Mercedes 3000 cc - 5000 cc)</option>
+            </optgroup> 
+            <optgroup label="Audi">
+              <option value="Audi1">( Audi 2000 cc - 3000 cc)</option>
+              <option value="Audi2">( Audi 3000 cc - 5000 cc)</option>
+            </optgroup>
+            <optgroup label="BMW">
+              <option value="BMW1">(BMW 2000 cc - 3000 cc)</option>
+              <option value="BMW2">(BMW 3000 cc - 5000 cc)</option>
+            </optgroup>
+            <optgroup label="Subaru">
+              <option value="Subaru1">(Subaru 2000 cc - 3000 cc)</option>
+              <option value="Subaru2">(Subaru 3000 cc - 4000 cc)</option>
+            </optgroup>
+            <optgroup label="Nissan">
+              <option value="Nissan1">(Nissan 2000 cc - 3000 cc)</option>
+              <option value="Nissan2">(Nissan 3000 cc - 5000 cc)</option>
+            </optgroup>
+          </select>     
+          <label for="distance">Distance</label>   
+          <input type="text" name="field1" placeholder="km ">
+        </fieldset>
+        <input type="submit" value="Calculate" />
+      </form>
+    </div>
+
+<!--contact us section-->
+
+    <section id="contact-section">
+      <div class="container">
+         <h2>Contact Us</h2>
+         <p>At myFuel we value your feedback. Please leave us a message or complaint by filling the form below.</p>
+        <div class="contact-form">
+
+             <!-- First grid -->
+          <div>
+            <i class="fa fa-map-marker"></i><span class="form-info">  Times Tower 20th Floor-344</span><br>
+            <i class="fa fa-phone" > </i><span class="form-info">  02-334-4563</span><br>
+            <i class="fa fa-envelope"></i><span class="form-info">  myFuelApp@co.ke</span>
+          </div>
+          
+              <!-- second grid -->
+      <div>        
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="text" placeholder="Last Name"><br>
+          <input type="Email" placeholder="Email" required><br>
+          <input type="text" placeholder="Subject of this message"><br>
+          <textarea name="message" placeholder="Message" rows="5" required></textarea><br>
+          <button class="submit" >Send Message</button> 
+        </form>   
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
