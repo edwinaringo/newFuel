@@ -6,9 +6,9 @@ function Car(name, distance,fuelType, fuelAmount, price){
   this.price = price;
 }
 
-var models = ['Toyota1','Toyota2','Toyota3','Toyota3','Mercedes1','Mercedes2','Audi1','Audi2','BMW1','BMW2','Subaru1','Subaru2','Nissan1','Nissan2'];
-var petrolValues = [4.5,7.3,'none',5.7,12.2,7.5,8.5,6.5,8.7];
-var dieselValues = ['none',8.4,10.3,5.7,9.1,6.3,9.8,3.2,5.9];
+var models = ['Toyota1','Toyota2','Toyota3','Mercedes1','Mercedes2','Audi1','Audi2','BMW1','BMW2','Subaru1','Subaru2','Nissan1','Nissan2'];
+var petrolValues = [4.5,7.3,'none',5.7,12.2,5.7,12.2,5.7,12.2,7.5,8.5,6.5,8.7];
+var dieselValues = ['none',8.4,10.3,5.7,9.1,5.7,9.1,5.7,9.1,6.3,9.8,3.2,5.9];
 
 $(document).ready(function(){
   console.log(models,petrolValues,dieselValues);
@@ -76,11 +76,13 @@ $(document).ready(function(){
       var dieselPrice =parseInt(dieselNeeded*104);
       console.log(dieselPrice);
     }
-    var newCar = new Car(modelName,inputDistance,typeDiesel||typePetrol,dieselNeeded||petrolNeeded,dieselCheck||petrolPrice,);
+    var newCar = new Car(modelName,inputDistance,typeDiesel||typePetrol,dieselNeeded||petrolNeeded,dieselPrice||petrolPrice,);
     console.log(newCar);
     document.getElementById('fuelForm').reset();
-    $('#resultSection').show();
-    $('ul#result').append('<li>' + "Car Model : " + newCar.name + '</li>' +
+    var scroll = document.getElementById('resultSection');
+    scroll.scrollIntoView(false);
+    $('ul#result').append('<h2 class="text-center">Your Result</h2>' +
+      '<li>' + "Car Model : " + newCar.name + '</li>' +
     '<li>' + "Distance : " + newCar.distance + ' Km' + '</li>' +
     '<li>' + "Fuel Type : " + newCar.fuelType + '</li>'+
     '<li>' + "Amount of Fuel Needed :" + newCar.fuelAmount + 'Litres'+'</li>' +
