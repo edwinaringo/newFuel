@@ -5,7 +5,7 @@
 	background: #f4f7f8;
 	margin: 10px auto;
 	padding: 20px;
-	background: #f4f7f8;
+	background: #070707;
 	border-radius: 8px;
 	font-family: Georgia, "Times New Roman", Times, serif;
   opacity: 90%;
@@ -106,10 +106,39 @@ body {
 .bg-light{
 	text-align: center;
 	opacity: 90%;
+	color:#070707;
+
 }
 img{
 	height: 70px;
   width: 70px;	
 }
-
-	
+#title{
+	opacity: 90%;
+	background-color:#070707;
+	border-radius: 10px;
+}
+#about{
+	opacity: 90%;
+	background-color:#070707;
+	margin-top: 150px;
+	margin-bottom: 150px;
+	border-radius: 10px;
+	padding-top: 20px;
+}
+body{
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(8, 8, 8, 0.2);
+	border-radius: 15px 15px 15px 0px;
+}
