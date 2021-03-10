@@ -23,6 +23,10 @@ $(document).ready(function(){
     $('#cars option[value = "Toyota1"]').attr('disabled','disabled');
     $('#cars option[value = "Toyota3"]').removeAttr('disabled');
   });  
+  $('#calculate').click(function(){
+    
+  });
+
   
 
   $('#fuelForm').submit(function(event){
@@ -59,13 +63,13 @@ $(document).ready(function(){
       console.log(petrolConsumption);  
       var petrolNeeded = ((petrolConsumption*inputDistance)/100)
       console.log(petrolNeeded);
-      var petrolPrice =parseInt(petrolNeeded*117);
+      var petrolPrice =parseInt(petrolNeeded*117).toFixed(3);
       console.log(petrolPrice);
     }else if(dieselCheck){
       console.log("Bariki");
       var typeDiesel = document.querySelector("#diesel").value;
       console.log(typeDiesel);  
-      var dieselConsumption = parseFloat(dieselValues[modelIndex]);
+      var dieselConsumption = parseFloat(dieselValues[modelIndex]).toFixed(3);
       console.log(dieselConsumption);  
       var dieselNeeded = ((dieselConsumption*inputDistance)/100)
       console.log(dieselNeeded);
@@ -74,5 +78,6 @@ $(document).ready(function(){
     }
     var newCar = new Car(modelName,inputDistance,typeDiesel||typePetrol,dieselNeeded||petrolNeeded,dieselCheck||petrolPrice,);
     console.log(newCar);
+    document.getElementById('fuelForm').reset();
   });
 });
