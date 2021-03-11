@@ -79,13 +79,18 @@ $(document).ready(function(){
     var newCar = new Car(modelName,inputDistance,typeDiesel||typePetrol,dieselNeeded||petrolNeeded,dieselPrice||petrolPrice,);
     console.log(newCar);
     document.getElementById('fuelForm').reset();
-    var scroll = document.getElementById('resultSection');
-    scroll.scrollIntoView(false);
-    $('ul#result').append('<h2 class="text-center">Your Result</h2>' +
-      '<li>' + "Car Model : " + newCar.name + '</li>' +
+    $('ul#result').append('<li>' + "Car Model : " + newCar.name + '</li>' +
     '<li>' + "Distance : " + newCar.distance + ' Km' + '</li>' +
     '<li>' + "Fuel Type : " + newCar.fuelType + '</li>'+
     '<li>' + "Amount of Fuel Needed :" + newCar.fuelAmount + 'Litres'+'</li>' +
-    '<li>' + "Estimated Price : Ksh." + newCar.price + '</li>')
+    '<li>' + "Estimated Price : Ksh." + newCar.price + '</li>' +
+    '<button type="button" class="btn btn-success " id="finish">Finish</button>')    
+   $('#finish').click(function(){
+    location.reload();
+   });
+   $('#calculate').hide();
+
   });
+
+
 });
