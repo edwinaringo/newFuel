@@ -91,6 +91,11 @@ $(document).ready(function(){
    $('#calculate').hide();
 
   });
-
-
+  $('button.submit').click(function(event){
+    event.preventDefault();
+    var inputName = document.getElementById('name').value;
+    $('#contactForm').hide();
+    $('.message').append('<p class="bg-secondary">Thank you for your enquiry ' + inputName + '. We will get back to you as soon as possible!</p>')
+  
+  })
 });
