@@ -1,4 +1,137 @@
+*{
+  margin:0;
+  padding:0;
+}
 
+body{
+  margin:0;
+  font-family: "Quicksand", sans-serif;
+  font-size:17px;
+  color: white;
+  line-height:1.6;
+  font-weight: bold;
+}
+.head{
+  text-align: right;
+  float: right;
+}
+
+#showcase{
+  background-image:url(/img/fuel.png);
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:right;
+  align-items:right;
+  text-align:right;
+  padding:0 20px;
+  padding-top: 400px;
+}
+
+#showcase h1{
+  font-size:70px;
+  line-height:1.2;
+  font-weight: bolder;
+}
+
+#showcase p{
+  font-size:30px;
+}
+
+#showcase .button{
+  font-size:18px;
+  text-decoration:none;
+  color:white;
+  border: rgb(252, 188, 49) 1px solid;
+  padding:10px 20px;
+  border-radius:10px;
+  margin-top:20px;
+  background-color:rgb(252, 188, 49) ;
+  transition: 1s;
+}
+
+#showcase .button:hover{
+  background:#926239;
+  color:white;
+}
+
+
+#section-a{
+  padding:70px;
+  background: rgb(148, 147, 146);
+  color:#fff;
+  text-align:center;
+  font-size: 25px;
+}
+
+/*about section css*/
+.about-section{
+  background: url(/images/about.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.about-us{
+  color: #070707;
+}
+
+.inner-container{
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 150px;
+}
+
+.inner-container h1{
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.text{
+  font-size: 20px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+  .inner-container{
+      padding: 80px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .about-section{
+      background-size: 100%;
+      padding: 100px 40px;
+  }
+  .inner-container{
+      width: 100%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .about-section{
+      padding: 0;
+  }
+  .inner-container{
+      padding: 60px;
+  }
+}
+/*end of about us css*/
 .form-style-5{
 	max-width: 500px;
 	padding: 10px 20px;
@@ -231,7 +364,6 @@
 }
 body, html {
   height: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .hero-image {
 height: 100%;
