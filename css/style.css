@@ -90,7 +90,7 @@
 	background: #109177;
 }
 
-}
+
 
 
 
@@ -229,5 +229,70 @@
   }
 
 }
-
-
+body, html {
+  height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hero-image {
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+.about-image {
+height: 50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+img{
+  height: 70px;
+  width: 70px;
+}
+#title{
+  opacity: 90%;
+  background-color:#070707;
+  border-radius: 10px;
+}
+#about{
+  opacity: 90%;
+  background-color:#070707;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+.number {
+  background: #1ABC9C;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(8, 8, 8, 0.2);
+  border-radius: 15px 15px 15px 0px;
+}
+#hero{
+  height: 100%;
+  background-image: url("https://gomechanic.in/blog/wp-content/uploads/2018/09/Fuel-Efficiency-Driving-Tips-Featured-Image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container-fluid{
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(/img/fuel.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
