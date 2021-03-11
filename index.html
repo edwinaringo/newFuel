@@ -6,11 +6,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
-    <title>My Fuel, :Nairobi</title>
+    <title>MyFuel :Nairobi</title>
   </head>
   <body>
     <div class="text-center">
-      <h1 > My Fuel: Nairobi</h1>
+      <h1> MyFuel: Nairobi</h1>
       <h3 > Calculate your fuel consumption and cost</h3>
     </div>
     <div class="form-style-5">
@@ -19,7 +19,7 @@
           <legend><span class="number"></span> Calculate My Fuel Cost</legend>
           <p>Please Select Your Fuel Type:</p>
           <div>
-            <input type="radio" id="petrol" name="fuel-type" value="petrol" checked>
+            <input type="radio" id="petrol" name="fuel-type" value="petrol" >
             <label for="petrol" class="radio-inline">Petrol</label>
             <input type="radio" id="diesel" name="fuel-type" value="diesel">
             <label for="diesel" class="radio-inline">Diesel</label>
@@ -30,9 +30,9 @@
               <option selected>Choose...</option>
             </optgroup>
             <optgroup label="Toyota">
-              <option value="Toyota1">( Toyota 1000 cc - 2000 cc)</option>
+              <option id="toyota1" value="Toyota1" disabled>( Toyota 1000 cc - 2000 cc)</option>
               <option value="Toyota2">( Toyota 2000 cc - 4000 cc)</option>
-              <option value="Toyota3">( Toyota 4000 cc - 5000 cc)</option>
+              <option id="toyota3" value="Toyota3" disabled>( Toyota 4000 cc - 5000 cc)</option>
             </optgroup>
             <optgroup label="Mercedes">
               <option value="Mercedes1">( Mercedes 2000 cc - 3000 cc)</option>
@@ -56,10 +56,15 @@
             </optgroup>
           </select>     
           <label for="distance">Distance</label>   
-          <input type="text" name="field1" placeholder="km ">
+          <input type="number" name="km" min="1" placeholder="km " id="distance" required>
         </fieldset>
-        <input type="submit" value="Calculate" />
+        <input type="submit" value="Calculate" id="calculate">
       </form>
+      <div class="row" id="resultSection">
+        <div class="col-md-10">
+          <ul id="result"></ul>
+        </div>
+      </div>
     </div>
 
 <!--contact us section-->
