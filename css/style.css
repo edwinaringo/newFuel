@@ -72,7 +72,7 @@ body{
   background-size: 55%;
   background-color: #fdfdfd;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 100px;
 }
 
 .about-us{
@@ -83,7 +83,7 @@ body{
   width: 55%;
   float: right;
   background-color: #fdfdfd;
-  padding: 150px;
+  padding: 10px;
 }
 
 .inner-container h1{
@@ -136,11 +136,11 @@ body{
 	max-width: 500px;
 	padding: 10px 20px;
 	background: #f4f7f8;
-	margin: 10px auto;
+	margin: 5px auto;
 	padding: 20px;
 	background: grey;
 	border-radius: 8px;
-	font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Quicksand", sans-serif;
   opacity: 90%;
 }
 .form-style-5 fieldset{
@@ -189,8 +189,8 @@ body{
 .form-style-5 .number {
 	background: #1abc9c;
 	color: #fff;
-	height: 30px;
-	width: 30px;
+	height: 28px;
+	width: 28px;
 	display: inline-block;
 	font-size: 0.8em;
 	margin-right: 4px;
@@ -406,8 +406,8 @@ img{
 .number {
   background: #1ABC9C;
   color: #fff;
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
   display: inline-block;
   font-size: 0.8em;
   margin-right: 4px;
@@ -415,6 +415,7 @@ img{
   text-align: center;
   text-shadow: 0 1px 0 rgba(8, 8, 8, 0.2);
   border-radius: 15px 15px 15px 0px;
+ 
 }
 #hero{
   height: 100%;
@@ -427,4 +428,11 @@ img{
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(/img/fuel.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+h2{
+  font-size: 26px;
+}
+.fontsize{
+  font-size: 39px;
+  
 }
