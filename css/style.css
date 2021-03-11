@@ -5,7 +5,7 @@
 	background: #f4f7f8;
 	margin: 10px auto;
 	padding: 20px;
-	background: #070707;
+	background: grey;
 	border-radius: 8px;
 	font-family: Georgia, "Times New Roman", Times, serif;
   opacity: 90%;
@@ -260,12 +260,12 @@ img{
 }
 #title{
   opacity: 90%;
-  background-color:#070707;
+  background-color:grey;
   border-radius: 10px;
 }
 #about{
   opacity: 90%;
-  background-color:#070707;
+  background-color:grey;
   margin-top: 150px;
   margin-bottom: 150px;
   border-radius: 10px;
