@@ -107,6 +107,10 @@ body{
   font-size: 13px;
 }
 
+.kilometer{
+  color: #070707;
+}
+
 @media screen and (max-width:1200px){
   .inner-container{
       padding: 80px;
@@ -309,7 +313,7 @@ body{
   }
 
   input::placeholder{
-    color: white;
+    color: black;
   }
 
    textarea{
