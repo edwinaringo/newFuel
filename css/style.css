@@ -407,6 +407,12 @@ img{
   border-radius: 10px;
   padding: 20px;
   padding-left: 60px;
+  width: 50%;
+  
+}
+.resultCol{
+  width: 50%;
+
 }
 .number {
   background: #1ABC9C;
