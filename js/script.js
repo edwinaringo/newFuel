@@ -63,7 +63,7 @@ $(document).ready(function(){
       console.log(petrolConsumption);  
       var petrolNeeded = ((petrolConsumption*inputDistance)/100)
       console.log(petrolNeeded);
-      var petrolPrice =parseInt(petrolNeeded*117);
+      var petrolPrice =parseInt(petrolNeeded*135);
       console.log(petrolPrice);
     }else if(dieselCheck){
       console.log("Bariki");
@@ -73,7 +73,7 @@ $(document).ready(function(){
       console.log(dieselConsumption);  
       var dieselNeeded = ((dieselConsumption*inputDistance)/100)
       console.log(dieselNeeded);
-      var dieselPrice =parseInt(dieselNeeded*104);
+      var dieselPrice =parseInt(dieselNeeded*117);
       console.log(dieselPrice);
     }
     var newCar = new Car(modelName,inputDistance,typeDiesel||typePetrol,dieselNeeded||petrolNeeded,dieselPrice||petrolPrice,);
